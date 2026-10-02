@@ -3,14 +3,12 @@ import { existsSync, readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { extractProfileFromPayload, maxRequestBytes } from "./profile-extraction.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 loadLocalEnv();
 
 const port = Number(process.env.PORT ?? 4173);
-const openAiApiKey = process.env.OPENAI_API_KEY;
-const openAiModel = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
-const maxRequestBytes = 64 * 1024;
 
 const contentTypes = {
   ".css": "text/css; charset=utf-8",
@@ -44,29 +42,6 @@ function loadLocalEnv() {
     }
   }
 }
-
-const profileSchema = {
-  type: "object",
-  additionalProperties: false,
-  required: [
-    "goals",
-    "capabilities",
-    "transferableCapabilities",
-    "resources",
-    "familyContext",
-    "constraints",
-    "missingInformation"
-  ],
-  properties: {
-    goals: { type: "array", items: { type: "string" } },
-    capabilities: { type: "array", items: { type: "string" } },
-    transferableCapabilities: { type: "array", items: { type: "string" } },
-    resources: { type: "array", items: { type: "string" } },
-    familyContext: { type: "array", items: { type: "string" } },
-    constraints: { type: "array", items: { type: "string" } },
-    missingInformation: { type: "array", items: { type: "string" } }
-  }
-};
 
 function resolveRequestPath(url) {
   const parsed = new URL(url, `http://localhost:${port}`);
@@ -119,102 +94,8 @@ async function handleExtractProfile(request, response) {
     return;
   }
 
-  const story = String(payload.story ?? "").trim();
-  const pathways = Array.isArray(payload.pathways)
-    ? payload.pathways.map((pathway) => String(pathway).trim()).filter(Boolean)
-    : [];
-
-  if (!story) {
-    sendJson(response, 400, { error: "Missing required field: story." });
-    return;
-  }
-
-  if (!openAiApiKey) {
-    sendJson(response, 503, {
-      error: "OPENAI_API_KEY is not set. Deterministic profile extraction remains the working fallback."
-    });
-    return;
-  }
-
-  try {
-    const profile = await extractProfileWithOpenAI(story, pathways);
-    sendJson(response, 200, { profile });
-  } catch (error) {
-    console.error(error);
-    sendJson(response, 502, {
-      error: "OpenAI profile extraction failed. Deterministic profile extraction remains the working fallback."
-    });
-  }
-}
-
-async function extractProfileWithOpenAI(story, pathways) {
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${openAiApiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      model: openAiModel,
-      input: [
-        {
-          role: "system",
-          content: [
-            "You extract a structured MAI relocation profile from the user's own story.",
-            "Do not invent Abu Dhabi opportunities, official requirements, salaries, costs, visa rules, evidence, source names, or source URLs.",
-            "If a critical detail is absent, put it in missingInformation instead of guessing.",
-            "Use concise strings. The MAI Opportunity Graph will retrieve opportunities later."
-          ].join(" ")
-        },
-        {
-          role: "user",
-          content: JSON.stringify({ story, selectedPathways: pathways })
-        }
-      ],
-      text: {
-        format: {
-          type: "json_schema",
-          name: "mai_structured_profile",
-          strict: true,
-          schema: profileSchema
-        }
-      }
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error(`OpenAI request failed with status ${response.status}`);
-  }
-
-  const data = await response.json();
-  return normalizeProfile(JSON.parse(extractResponseText(data)));
-}
-
-function extractResponseText(data) {
-  if (typeof data.output_text === "string") {
-    return data.output_text;
-  }
-
-  const content = data.output
-    ?.flatMap((item) => item.content ?? [])
-    ?.find((item) => item.type === "output_text" && typeof item.text === "string");
-
-  if (!content) {
-    throw new Error("OpenAI response did not include output text.");
-  }
-
-  return content.text;
-}
-
-function normalizeProfile(profile) {
-  return Object.fromEntries(
-    Object.keys(profileSchema.properties).map((field) => [
-      field,
-      Array.isArray(profile[field])
-        ? profile[field].map((item) => String(item).trim()).filter(Boolean)
-        : []
-    ])
-  );
+  const result = await extractProfileFromPayload(payload);
+  sendJson(response, result.status, result.body);
 }
 
 const server = createServer(async (request, response) => {
