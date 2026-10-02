@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAI Relocator</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="shell-header">
+        <a class="brand" href="#story" aria-label="MAI Relocator home">
+          <span class="logo-slot" aria-hidden="true">
+            <img
+              src="./public/images/mai-relocator-logo.png"
+              alt=""
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.hidden=true"
+            />
+            <span>MAI</span>
+          </span>
+          <span>
+            <strong>MAI Relocator</strong>
+            <small>Evidence-first Abu Dhabi futures</small>
+          </span>
+        </a>
+        <span class="graph-pill">Powered by the MAI Abu Dhabi Opportunity Graph</span>
+      </header>
+      <nav class="flow-nav" aria-label="MAI Relocator journey steps">
+        <button class="flow-step active" type="button" data-step-jump="story">1. Your Story</button>
+        <button class="flow-step" type="button" data-step-jump="understand">2. Understand</button>
+        <button class="flow-step" type="button" data-step-jump="gate">3. Evidence Gate</button>
+        <button class="flow-step" type="button" data-step-jump="your-request">4. Your Request</button>
+        <button class="flow-step" type="button" data-step-jump="other-possibilities">5. Other Possibilities</button>
+        <button class="flow-step" type="button" data-step-jump="compare">6. Compare</button>
+      </nav>
+
+      <main>
+        <section class="hero screen active" id="screen-story" data-screen="story" aria-labelledby="story-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Evidence, Not Guessing.</p>
+            <h1 id="story-title">What could your life become in Abu Dhabi?</h1>
+            <p class="hero-subtitle">
+              Explore possible futures. Test them against evidence. Understand what it would take to make them real.
+            </p>
+            <div class="hero-asset-frame" aria-label="Future MAI Relocator hero illustration slot">
+              <img
+                class="hero-asset"
+                src="./public/images/hero-mai-relocator.png"
+                alt="MAI Relocator branded Abu Dhabi possibility compass"
+              />
+            </div>
+          </div>
+
+          <div class="story-panel">
+            <div class="panel-topline">
+              <span>Your Story</span>
+              <span>Step 1 of 6</span>
+            </div>
+            <label for="story-input">Tell us what you are trying to explore.</label>
+            <textarea
+              id="story-input"
+              rows="9"
+              spellcheck="true"
+              placeholder="Example: I am an AI product manager with startup experience. I am considering Abu Dhabi with my spouse and two children, and I want to explore career, business, and family options."
+            ></textarea>
+
+            <div class="chip-group" aria-label="Pathways">
+              <button class="pathway-chip" type="button" data-pathway="Career">Career</button>
+              <button class="pathway-chip" type="button" data-pathway="Career Change">Career Change</button>
+              <button class="pathway-chip" type="button" data-pathway="Business">Business</button>
+              <button class="pathway-chip" type="button" data-pathway="Investment">Investment</button>
+              <button class="pathway-chip" type="button" data-pathway="Education">Education</button>
+              <button class="pathway-chip" type="button" data-pathway="Family">Family</button>
+              <button class="pathway-chip" type="button" data-pathway="New Life">New Life</button>
+            </div>
+
+            <div class="form-actions">
+              <button class="primary-action" id="start-journey" type="button">Explore My Possibilities</button>
+              <button class="ghost-action" id="load-demo" type="button">Load Demo Journey</button>
+            </div>
+            <p class="form-hint" id="story-hint">Add your story or load the demo journey to unlock the rest of the flow.</p>
+          </div>
+        </section>
+
+        <section class="screen" id="screen-understand" data-screen="understand" aria-labelledby="understand-title">
+          <div class="screen-heading">
+            <p class="eyebrow">Understand</p>
+            <h2 id="understand-title">Here is how MAI understood your story.</h2>
+            <p>Correct anything that looks wrong before the evidence gate.</p>
+          </div>
+          <div id="profile-editor" class="profile-grid"></div>
+          <nav class="screen-actions" aria-label="Understand navigation">
+            <button class="secondary-action" type="button" data-back>Back</button>
+            <button class="primary-action" type="button" data-next="gate">Continue to Evidence Gate</button>
+          </nav>
+        </section>
+
+        <section class="screen" id="screen-gate" data-screen="gate" aria-labelledby="gate-title">
+          <div class="screen-heading">
+            <p class="eyebrow">Evidence Gate</p>
+            <h2 id="gate-title">What do we know, what needs verification, and what is missing?</h2>
+            <p>MAI asks for critical missing information instead of inventing it.</p>
+          </div>
+          <div class="gate-grid">
+            <article class="gate-column known">
+              <h3>Known</h3>
+              <ul id="known-list"></ul>
+            </article>
+            <article class="gate-column verify">
+              <h3>Needs Verification</h3>
+              <ul id="verify-list"></ul>
+            </article>
+            <article class="gate-column missing">
+              <h3>Missing</h3>
+              <ul id="missing-list"></ul>
+            </article>
+          </div>
+          <div class="question-panel">
+            <h3>Critical Questions</h3>
+            <p>Answer now if you can. Unanswered items remain marked as missing.</p>
+            <div id="critical-questions"></div>
+          </div>
+          <nav class="screen-actions" aria-label="Evidence gate navigation">
+            <button class="secondary-action" type="button" data-back>Back</button>
+            <button class="primary-action" type="button" data-next="your-request">Show Your Request</button>
+          </nav>
+        </section>
+
+        <section class="screen" id="screen-your-request" data-screen="your-request" aria-labelledby="request-title">
+          <div class="screen-heading">
+            <p class="eyebrow">Your Request</p>
+            <h2 id="request-title">Possibilities directly related to what you asked to explore.</h2>
+            <p class="graph-note">Powered by the MAI Abu Dhabi Opportunity Graph.</p>
+          </div>
+          <div id="your-request-grid" class="opportunity-grid"></div>
+          <nav class="screen-actions" aria-label="Your request navigation">
+            <button class="secondary-action" type="button" data-back>Back</button>
+            <button class="primary-action" type="button" data-next="other-possibilities">Show Other Possibilities</button>
+          </nav>
+        </section>
+
+        <section class="screen" id="screen-other-possibilities" data-screen="other-possibilities" aria-labelledby="other-title">
+          <div class="screen-heading">
+            <p class="eyebrow">Other Possibilities</p>
+            <h2 id="other-title">Adjacent possibilities from transferable capabilities.</h2>
+            <p class="possibility-caution">These are possibilities to explore, not predictions or recommendations.</p>
+          </div>
+          <div id="other-grid" class="opportunity-grid"></div>
+          <nav class="screen-actions" aria-label="Other possibilities navigation">
+            <button class="secondary-action" type="button" data-back>Back</button>
+            <button class="primary-action" type="button" data-next="compare">Compare Selected Paths</button>
+          </nav>
+        </section>
+
+        <section class="screen" id="screen-compare" data-screen="compare" aria-labelledby="compare-title">
+          <div class="screen-heading">
+            <p class="eyebrow">Explore / Compare</p>
+            <h2 id="compare-title">Explore selected futures against evidence.</h2>
+            <p>AI explores. MAI structures responsibility. Human chooses.</p>
+          </div>
+          <div id="compare-empty" class="empty-state hidden">
+            Select at least one future from Your Request or Other Possibilities to compare.
+          </div>
+          <div id="compare-list" class="compare-list"></div>
+          <nav class="screen-actions" aria-label="Compare navigation">
+            <button class="secondary-action" type="button" data-back>Back</button>
+            <button class="ghost-action" type="button" data-reset>Start Again</button>
+          </nav>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

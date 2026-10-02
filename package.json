@@ -1,0 +1,15 @@
+{
+  "name": "mai-relocator-opportunity-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MAI Relocator hackathon foundation: Abu Dhabi Opportunity Graph dataset and validation.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve-site.mjs",
+    "validate:data": "node scripts/validate-opportunity-graph.mjs",
+    "inspect:data": "node scripts/validate-opportunity-graph.mjs --summary"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

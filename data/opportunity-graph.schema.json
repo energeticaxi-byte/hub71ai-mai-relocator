@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mai-relocator.local/schemas/opportunity-graph.schema.json",
+  "title": "MAI Abu Dhabi Opportunity Graph",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_name",
+    "last_updated",
+    "principles",
+    "pathways",
+    "evidence_status_legend",
+    "opportunities"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "dataset_name": {
+      "const": "MAI Abu Dhabi Opportunity Graph"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "pathways": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "Career",
+          "Career Change",
+          "Business",
+          "Investment",
+          "Education",
+          "Family",
+          "New Life"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "evidence_status_legend": {
+      "type": "object",
+      "required": [
+        "verified",
+        "partial",
+        "needs_update",
+        "missing"
+      ],
+      "properties": {
+        "verified": {
+          "type": "string"
+        },
+        "partial": {
+          "type": "string"
+        },
+        "needs_update": {
+          "type": "string"
+        },
+        "missing": {
+          "type": "string"
+        }
+      }
+    },
+    "opportunities": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 15,
+      "items": {
+        "$ref": "#/$defs/opportunity"
+      }
+    }
+  },
+  "$defs": {
+    "pathway": {
+      "enum": [
+        "Career",
+        "Career Change",
+        "Business",
+        "Investment",
+        "Education",
+        "Family",
+        "New Life"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "verified",
+        "partial",
+        "needs_update",
+        "missing"
+      ]
+    },
+    "uncertainty_level": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "evidence_ref": {
+      "type": "object",
+      "required": [
+        "evidence_id",
+        "claim",
+        "source_name",
+        "source_url",
+        "date_checked",
+        "evidence_status",
+        "evidence_summary"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "pattern": "^ev-[a-z0-9-]+$"
+        },
+        "claim": {
+          "type": "string",
+          "minLength": 20
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "date_checked": {
+          "type": "string",
+          "format": "date"
+        },
+        "evidence_status": {
+          "$ref": "#/$defs/evidence_status"
+        },
+        "evidence_summary": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "transferable_capability": {
+      "type": "object",
+      "required": [
+        "capability",
+        "from_user_signal",
+        "how_it_transfers"
+      ],
+      "properties": {
+        "capability": {
+          "type": "string"
+        },
+        "from_user_signal": {
+          "type": "string"
+        },
+        "how_it_transfers": {
+          "type": "string"
+        }
+      }
+    },
+    "opportunity": {
+      "type": "object",
+      "required": [
+        "opportunity_id",
+        "title",
+        "pathways",
+        "capability_match",
+        "transferable_capabilities",
+        "abu_dhabi_opportunity",
+        "why_this_matters_in_abu_dhabi",
+        "evidence_refs",
+        "missing_evidence",
+        "uncertainty_level",
+        "gap_questions",
+        "what_would_change_assessment",
+        "next_responsible_action",
+        "demo_classification_hints",
+        "guardrails"
+      ],
+      "properties": {
+        "opportunity_id": {
+          "type": "string",
+          "pattern": "^opp-[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "pathways": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pathway"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "capability_match": {
+          "type": "object",
+          "required": [
+            "best_fit_user_signals",
+            "circumstances_that_help",
+            "circumstances_that_block_or_slow"
+          ],
+          "properties": {
+            "best_fit_user_signals": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            },
+            "circumstances_that_help": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "circumstances_that_block_or_slow": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "transferable_capabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/transferable_capability"
+          },
+          "minItems": 1
+        },
+        "abu_dhabi_opportunity": {
+          "type": "object",
+          "required": [
+            "description",
+            "sector",
+            "relevant_entities"
+          ],
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "sector": {
+              "type": "string"
+            },
+            "relevant_entities": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "why_this_matters_in_abu_dhabi": {
+          "type": "string",
+          "minLength": 20
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          },
+          "minItems": 1
+        },
+        "missing_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncertainty_level": {
+          "$ref": "#/$defs/uncertainty_level"
+        },
+        "gap_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "what_would_change_assessment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "next_responsible_action": {
+          "type": "string",
+          "minLength": 20
+        },
+        "demo_classification_hints": {
+          "type": "object",
+          "required": [
+            "your_request_when",
+            "other_possibility_when"
+          ],
+          "properties": {
+            "your_request_when": {
+              "type": "string"
+            },
+            "other_possibility_when": {
+              "type": "string"
+            }
+          }
+        },
+        "guardrails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

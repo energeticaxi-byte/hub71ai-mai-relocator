@@ -1,0 +1,1367 @@
+{
+  "schema_version": "0.1.0",
+  "dataset_name": "MAI Abu Dhabi Opportunity Graph",
+  "last_updated": "2026-10-02",
+  "principles": [
+    "Evidence, Not Guessing.",
+    "OpenAI extracts and explains; the Opportunity Graph retrieves; MAI evaluates evidence, uncertainty, gaps, and next responsible action.",
+    "Possibilities are exploration paths, not predictions, rankings, or recommendations.",
+    "Critical missing information should trigger questions rather than invented conclusions."
+  ],
+  "pathways": [
+    "Career",
+    "Career Change",
+    "Business",
+    "Investment",
+    "Education",
+    "Family",
+    "New Life"
+  ],
+  "evidence_status_legend": {
+    "verified": "The source is official or primary and was checked for this dataset build.",
+    "partial": "The source supports the broad opportunity, but user-specific eligibility or current availability still requires verification.",
+    "needs_update": "The source is official but time-sensitive, older, or likely to change before a user acts.",
+    "missing": "A needed claim has no source yet and must not be presented as established fact."
+  },
+  "opportunities": [
+    {
+      "opportunity_id": "opp-ai-startup-founder-hub71-ai",
+      "title": "AI startup founder pathway through Hub71+ AI",
+      "pathways": [
+        "Business",
+        "Career Change"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Founder or operator building an AI product",
+          "Technical AI, ML, software, data, or product background",
+          "Interest in scaling through Abu Dhabi rather than only finding a job"
+        ],
+        "circumstances_that_help": [
+          "Existing MVP, pilot customers, or strong founding team",
+          "Willingness for at least one founder to spend meaningful time in Abu Dhabi",
+          "Product can benefit from AI infrastructure, R&D links, or enterprise/government partners"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No product concept or team yet",
+          "Regulated sector without compliance plan",
+          "Cannot establish Abu Dhabi presence if accepted"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "AI product building",
+          "from_user_signal": "Has built models, data products, automation systems, or AI-enabled workflows",
+          "how_it_transfers": "Can become the core capability of a startup eligible for an AI-focused ecosystem rather than only a salaried role"
+        },
+        {
+          "capability": "Enterprise problem solving",
+          "from_user_signal": "Has solved operational problems for companies or institutions",
+          "how_it_transfers": "Can map into cross-sector AI use cases that Abu Dhabi ecosystem partners may want to test"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether the user's AI product or founding profile fits the Hub71+ AI specialist ecosystem and related Abu Dhabi AI partners.",
+        "sector": "Artificial Intelligence / Startups",
+        "relevant_entities": [
+          "Hub71",
+          "Hub71+ AI",
+          "ADGM",
+          "AI71",
+          "Core42",
+          "MBZUAI"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Abu Dhabi has a visible AI startup ecosystem push through Hub71+ AI and partners providing infrastructure, talent access, and R&D links; this creates an exploration path for builders, not just job seekers.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-hub71-ai-launch",
+          "claim": "Hub71 launched Hub71+ AI as a specialist ecosystem for startups harnessing cross-sector AI innovation, backed by partners including Core42, AI71, AWS, Google for Startups, Nvidia, HPE, MBZUAI, and 42 Abu Dhabi.",
+          "source_name": "Hub71 press release",
+          "source_url": "https://www.hub71.com/latest-news/press-release/abu-dhabi-launches-hub71-plus-ai-to-advance-startups-driving-ai-innovation",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official Hub71 source confirms the specialist AI ecosystem and partner network."
+        },
+        {
+          "evidence_id": "ev-hub71-faq-relocation",
+          "claim": "Hub71 states accepted startups must relocate and establish a presence at Hub71, and it encourages at least one founder to relocate for the programme duration.",
+          "source_name": "Hub71 FAQ",
+          "source_url": "https://www.hub71.com/faqs",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official FAQ supports the relocation/presence requirement that affects user fit."
+        }
+      ],
+      "missing_evidence": [
+        "Current Hub71+ AI cohort application deadline and eligibility details for this exact user",
+        "Whether the user's startup stage, sector, and traction satisfy Hub71 selection criteria",
+        "Whether any regulated AI use case needs additional approvals"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "Do you already have an AI product, MVP, customers, pilots, or only an idea?",
+        "Could one founder relocate or spend the required programme time in Abu Dhabi?",
+        "Is the product in a regulated field such as finance, health, education, or public sector decisioning?"
+      ],
+      "what_would_change_assessment": [
+        "A confirmed active application window would increase actionability.",
+        "Evidence of product traction or a credible founding team would strengthen fit.",
+        "A regulated use case without compliance planning would increase uncertainty."
+      ],
+      "next_responsible_action": "Check the current Hub71+ AI application route and prepare a one-page fit memo mapping product, traction, founder availability, and regulatory exposure.",
+      "demo_classification_hints": {
+        "your_request_when": "User explicitly asks about launching or scaling an AI startup in Abu Dhabi.",
+        "other_possibility_when": "User asks for AI jobs but has founder-level product, technical, or market-building capability."
+      },
+      "guardrails": [
+        "Do not present admission, funding, or visa outcomes as likely.",
+        "Do not invent cohort deadlines; verify before action."
+      ]
+    },
+    {
+      "opportunity_id": "opp-preseed-startup-founder-hub71-access",
+      "title": "Pre-seed to Series A startup pathway through Hub71 Access",
+      "pathways": [
+        "Business"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Startup founder with pitch deck, team, and early traction",
+          "Product can use Abu Dhabi market, capital, talent, or corporate access",
+          "Wants a structured market-entry programme"
+        ],
+        "circumstances_that_help": [
+          "Clear problem, solution, value proposition, and business model",
+          "Raised capital, pilots, revenue, or validated demand",
+          "Long-term Abu Dhabi team-building plan"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No pitch deck or business model",
+          "No founder able to relocate",
+          "Business activity incompatible with Abu Dhabi licensing or regulatory requirements"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Startup execution",
+          "from_user_signal": "Has built a product, hired a team, raised funds, or acquired customers",
+          "how_it_transfers": "Can be evaluated against Hub71 programme selection criteria instead of only general business setup"
+        },
+        {
+          "capability": "Market expansion",
+          "from_user_signal": "Wants MENA, UAE, or government/corporate market access",
+          "how_it_transfers": "Can align with Hub71's stated market, capital, and partner access proposition"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Assess whether an established startup can apply to Hub71 Access for Abu Dhabi market entry, incentives, partner access, and founder relocation.",
+        "sector": "Startups / Market Entry",
+        "relevant_entities": [
+          "Hub71",
+          "ADGM",
+          "Techstars"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Hub71 Access is positioned as a route into Abu Dhabi's marketplace for pre-seed to Series A startups, giving the user a concrete exploration track if they are already building a company.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-hub71-access-programme",
+          "claim": "Hub71 Access is described as a 12-month programme for pre-seed to Series A startups, with in-kind incentives, cash for equity, partner access, and an expectation that at least one founder moves to Abu Dhabi.",
+          "source_name": "Hub71 Access Programme",
+          "source_url": "https://www.hub71.com/index.php/program/access-programme",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official programme page supports stage, relocation, incentive, and application-preparation fields."
+        }
+      ],
+      "missing_evidence": [
+        "Current application cycle details for the user's intended date",
+        "Whether the user's sector is preferred or excluded",
+        "Exact equity and incentive terms at time of application"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What stage is the company: idea, MVP, revenue, pre-seed, seed, or Series A?",
+        "Do you have a pitch deck covering problem, solution, business model, market, traction, and team?",
+        "Can one founder commit to Abu Dhabi presence if accepted?"
+      ],
+      "what_would_change_assessment": [
+        "A complete pitch deck and traction evidence would make this more actionable.",
+        "No founder relocation availability would weaken fit.",
+        "A current call for applications in the right cohort would reduce timing uncertainty."
+      ],
+      "next_responsible_action": "Verify the current Hub71 Access application deadline and prepare a gap list against Hub71's application requirements.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about moving a startup or starting a company in Abu Dhabi.",
+        "other_possibility_when": "User asks for career relocation but describes an existing product, customers, or founder background."
+      },
+      "guardrails": [
+        "Do not imply funding is guaranteed.",
+        "Do not treat programme acceptance as a relocation plan until selection and legal setup are verified."
+      ]
+    },
+    {
+      "opportunity_id": "opp-fintech-reglab-adgm",
+      "title": "FinTech regulatory exploration through ADGM RegLab",
+      "pathways": [
+        "Business",
+        "Career Change"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "FinTech founder, product lead, compliance lead, or engineer",
+          "Has a financial technology product that may need regulatory testing",
+          "Understands risk, controls, and regulated financial services"
+        ],
+        "circumstances_that_help": [
+          "Product is innovative and at a stage ready for testing",
+          "Can prepare regulatory plan, controls, and senior management evidence",
+          "Needs a controlled environment rather than immediate full licensing"
+        ],
+        "circumstances_that_block_or_slow": [
+          "Purely unregulated SaaS may not need RegLab",
+          "No risk/compliance documentation",
+          "Financial services activity may require FSRA approval before operating"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Regulated product judgment",
+          "from_user_signal": "Experience in banking, payments, risk, compliance, crypto, lending, insurance, or capital markets",
+          "how_it_transfers": "Can be translated into a regulatory testing or licensing exploration path in ADGM"
+        },
+        {
+          "capability": "Controls and governance design",
+          "from_user_signal": "Has built operational, financial, technical, or compliance controls",
+          "how_it_transfers": "Supports admission-readiness conversations with ADGM FSRA"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Evaluate whether a FinTech concept or company should explore ADGM RegLab, Digital Lab, or another ADGM setup path.",
+        "sector": "FinTech / Financial Regulation",
+        "relevant_entities": [
+          "ADGM",
+          "FSRA",
+          "ADGM RegLab",
+          "ADGM Digital Lab"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Abu Dhabi has a defined financial free zone and fintech regulatory infrastructure; for the right user this creates a specific pathway, not a generic business setup suggestion.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-adgm-fintech",
+          "claim": "ADGM describes its RegLab as a controlled environment where fintechs can test innovation under regulator guidance, and notes FSRA approval is required for financial services entities setting up in ADGM.",
+          "source_name": "ADGM FinTech",
+          "source_url": "https://www.adgm.com/business-areas/fintech",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADGM page supports RegLab, Digital Lab, and authorization considerations."
+        }
+      ],
+      "missing_evidence": [
+        "Whether the user's activity is regulated or unregulated in ADGM",
+        "Current RegLab application criteria and fees",
+        "Capital, staffing, governance, and local presence requirements for the user's activity"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "What financial activity does your product perform or enable?",
+        "Do you already hold a license elsewhere?",
+        "Is the product ready for controlled testing with real users or institutions?"
+      ],
+      "what_would_change_assessment": [
+        "A written regulatory perimeter analysis would reduce uncertainty.",
+        "Existing regulated status elsewhere may affect the setup route.",
+        "If the product is not financial services, ADGM Tech Startup Licence or another setup path may be more appropriate."
+      ],
+      "next_responsible_action": "Prepare a regulatory activity map and request current ADGM/FSRA guidance before treating Abu Dhabi as an executable launch path.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about fintech, digital assets, payments, or regulated finance in Abu Dhabi.",
+        "other_possibility_when": "User asks about software jobs but has deep finance, risk, or compliance experience."
+      },
+      "guardrails": [
+        "Do not provide legal or regulatory advice.",
+        "Do not say the user can operate before FSRA/licensing status is verified."
+      ]
+    },
+    {
+      "opportunity_id": "opp-freelance-consulting-added",
+      "title": "Freelance or remote consulting business licence exploration",
+      "pathways": [
+        "Business",
+        "Career Change",
+        "New Life"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Independent consultant, expert, freelancer, or service provider",
+          "Can deliver knowledge work remotely or without physical premises",
+          "Wants a lower-complexity business entry path before larger setup"
+        ],
+        "circumstances_that_help": [
+          "Clear service category that maps to licensed activities",
+          "Existing clients or portfolio",
+          "Can verify visa/residency route separately"
+        ],
+        "circumstances_that_block_or_slow": [
+          "Activity needs sector approvals",
+          "Needs employment visa rather than business setup",
+          "No clear billable service or client base"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Professional service delivery",
+          "from_user_signal": "Has consulting, design, software, marketing, training, operations, or advisory experience",
+          "how_it_transfers": "May map to freelance or virtual licence activity categories rather than a full company at first"
+        },
+        {
+          "capability": "Remote-first operations",
+          "from_user_signal": "Already serves clients online",
+          "how_it_transfers": "Can explore Abu Dhabi licensing routes designed for remote or non-premises activity"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore ADDED licensing categories such as Freelancer Licence or Virtual Licence as a business-entry path for suitable independent professionals.",
+        "sector": "Professional Services / Business Setup",
+        "relevant_entities": [
+          "ADDED",
+          "TAMM",
+          "Abu Dhabi Business Centre"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Some relocators do not need a startup accelerator; they need to know whether their existing professional capability can become a compliant Abu Dhabi service activity.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-added-licensing-types",
+          "claim": "ADDED lists licence types including Freelancer Licence for investors to practice specific fields remotely without physical office premises and Virtual Licence for individuals outside the country wishing to start a business in Abu Dhabi.",
+          "source_name": "Abu Dhabi DED Licensing Requirements",
+          "source_url": "https://added.gov.ae/en/set-up/establish-your-business/licensing-requirements",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADDED source supports licence category existence, but not user-specific activity approval."
+        },
+        {
+          "evidence_id": "ev-added-business-journey",
+          "claim": "ADDED describes business setup steps including business activity, legal form, trade name, initial approval, location, additional approvals, and business licence.",
+          "source_name": "ADDED Establishing Your Business",
+          "source_url": "https://www.added.gov.ae/en/set-up/establish-your-business",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official setup guide supports the need to verify activity, legal form, location, and extra approvals."
+        }
+      ],
+      "missing_evidence": [
+        "Exact activity list match for the user's service",
+        "Current fees and processing times",
+        "Visa/residency implications of the chosen licence"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What exact services will you sell, and to whom?",
+        "Do you need a UAE residence route, or only a business registration route?",
+        "Will your activity touch regulated sectors such as healthcare, education, finance, or tourism?"
+      ],
+      "what_would_change_assessment": [
+        "A confirmed activity match in ADDED/TAMM would increase readiness.",
+        "A regulated activity would require additional approvals and increase complexity.",
+        "No client base would make this more speculative."
+      ],
+      "next_responsible_action": "Map the user's service to ADDED activity categories and verify licence, visa, and approval requirements in TAMM or with ADDED.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about freelancing, consulting, or starting a small service business.",
+        "other_possibility_when": "User asks for employment but has portable client-facing expertise."
+      },
+      "guardrails": [
+        "Do not imply a licence grants residency without verifying visa route.",
+        "Do not choose a legal form for the user."
+      ]
+    },
+    {
+      "opportunity_id": "opp-industrial-trade-setup-kezad",
+      "title": "Industrial, logistics, or trade setup through KEZAD",
+      "pathways": [
+        "Business",
+        "Investment"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Manufacturing, logistics, warehousing, import/export, or industrial operations background",
+          "Wants physical infrastructure rather than only a digital company",
+          "Has capital, supply chain relationships, or operational know-how"
+        ],
+        "circumstances_that_help": [
+          "Clear product category and facility needs",
+          "Supply chain or regional distribution strategy",
+          "Ability to compare free zone and mainland requirements"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No capital plan",
+          "Activity may require environmental, municipal, customs, or sector approvals",
+          "Needs market demand validation"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Operational scaling",
+          "from_user_signal": "Has managed facilities, logistics, procurement, manufacturing, or trade operations",
+          "how_it_transfers": "Can align with economic zone infrastructure and business setup requirements"
+        },
+        {
+          "capability": "Supply chain market access",
+          "from_user_signal": "Has suppliers, distributors, or export/import experience",
+          "how_it_transfers": "Can become a regional distribution or production opportunity if licensing and demand are verified"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether KEZAD economic zone setup fits an industrial, logistics, trading, or manufacturing business plan.",
+        "sector": "Industrial Zones / Logistics / Manufacturing",
+        "relevant_entities": [
+          "KEZAD Group",
+          "AD Ports Group",
+          "Abu Dhabi Free Zone"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Abu Dhabi relocation is not only white-collar employment; KEZAD creates a concrete opportunity track for operators and investors whose capabilities are tied to physical trade and production.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-kezad-business-setup",
+          "claim": "KEZAD Group describes itself as the UAE's largest operator of integrated economic zones, business services, staff accommodation, and industrial real estate solutions, with business setup options.",
+          "source_name": "KEZAD Group",
+          "source_url": "https://www.kezadgroup.com/",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official KEZAD source supports the economic-zone opportunity and infrastructure positioning."
+        }
+      ],
+      "missing_evidence": [
+        "Applicable legal type, facility, and activity approval for the specific business",
+        "Cost, lease, customs, and staffing requirements",
+        "Demand evidence for the user's product or service in the region"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "What product or goods would you manufacture, store, import, export, or distribute?",
+        "What facility size, utilities, labor, and logistics do you need?",
+        "Do you already have buyers, suppliers, or contracts?"
+      ],
+      "what_would_change_assessment": [
+        "A facility and activity match from KEZAD would reduce uncertainty.",
+        "Confirmed buyer/supplier relationships would strengthen fit.",
+        "Environmental or sector approvals could materially alter timeline and cost."
+      ],
+      "next_responsible_action": "Prepare a business activity and facility requirements brief, then verify KEZAD legal type, setup, lease, and approval requirements.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about manufacturing, logistics, import/export, or industrial investment.",
+        "other_possibility_when": "User asks for operations roles but has capital and supply chain relationships."
+      },
+      "guardrails": [
+        "Do not estimate setup costs without current KEZAD confirmation.",
+        "Do not assume customs or environmental approval."
+      ]
+    },
+    {
+      "opportunity_id": "opp-climatetech-founder-hub71-climatetech",
+      "title": "ClimateTech founder pathway through Hub71+ ClimateTech",
+      "pathways": [
+        "Business",
+        "Investment",
+        "Career Change"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Founder or expert working on decarbonization, energy, sustainability, buildings, water, mobility, or industrial efficiency",
+          "Has technical climate solution or sustainability venture",
+          "Needs corporate, policy, or investor access"
+        ],
+        "circumstances_that_help": [
+          "Pre-seed to Series A startup stage",
+          "Product can be piloted with utilities, energy, buildings, finance, or public-sector partners",
+          "Can relocate founder presence if accepted"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No measurable climate impact thesis",
+          "No product or technical validation",
+          "Hardware-heavy solution without pilot, certification, or capital plan"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Climate or sustainability expertise",
+          "from_user_signal": "Experience in energy, ESG, carbon accounting, water, infrastructure, buildings, or industrial efficiency",
+          "how_it_transfers": "Can map to Abu Dhabi's climate technology ecosystem rather than only general sustainability roles"
+        },
+        {
+          "capability": "Pilot design",
+          "from_user_signal": "Can measure operational, carbon, energy, or cost impact",
+          "how_it_transfers": "Supports conversations with corporate partners that need testable climate solutions"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether a sustainability or decarbonization startup fits Hub71+ ClimateTech and its partner network.",
+        "sector": "ClimateTech / Sustainability",
+        "relevant_entities": [
+          "Hub71+ ClimateTech",
+          "ADGM",
+          "Department of Energy",
+          "Masdar City",
+          "TAQA",
+          "Tabreed"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Hub71+ ClimateTech gives sustainability founders a named Abu Dhabi ecosystem, with policy, corporate, capital, and infrastructure partners that may make relocation commercially meaningful.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-hub71-climatetech-programme",
+          "claim": "Hub71+ ClimateTech is a specialist ecosystem for sustainability startups using technology to drive decarbonization, with a 12-month programme and access to government, market, and investment partners.",
+          "source_name": "Hub71+ ClimateTech programme",
+          "source_url": "https://www.hub71.com/program/hub71-plus-climatetech",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official programme page supports the climate-specific startup opportunity."
+        }
+      ],
+      "missing_evidence": [
+        "Current cohort deadline and application status",
+        "Sector fit for the user's specific technology",
+        "Pilot readiness, certifications, and regulatory requirements"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What climate problem does your solution address and how do you measure impact?",
+        "Is the solution software, hardware, project finance, or services?",
+        "Do you have pilots, customers, test data, or certifications?"
+      ],
+      "what_would_change_assessment": [
+        "A measurable pilot result would strengthen fit.",
+        "Hardware certification gaps would increase timeline uncertainty.",
+        "Current partner demand for the specific solution category would increase actionability."
+      ],
+      "next_responsible_action": "Verify active Hub71+ ClimateTech intake and build an evidence pack with climate impact, pilot status, team, and Abu Dhabi partner relevance.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about climate, sustainability, energy transition, or green business in Abu Dhabi.",
+        "other_possibility_when": "User asks for operations or engineering roles but has sustainability project experience."
+      },
+      "guardrails": [
+        "Do not present climate impact claims without user-provided evidence.",
+        "Do not infer programme acceptance from sector fit."
+      ]
+    },
+    {
+      "opportunity_id": "opp-healthcare-professional-licensing-doh",
+      "title": "Healthcare professional licensing route through DoH Abu Dhabi",
+      "pathways": [
+        "Career",
+        "New Life",
+        "Family"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Doctor, nurse, pharmacist, dentist, allied health professional, or healthcare scientist",
+          "Has recognized qualifications and clinical experience",
+          "Wants to work in Abu Dhabi healthcare"
+        ],
+        "circumstances_that_help": [
+          "Documents, credentials, and employment history are available",
+          "Profession appears in PQR categories",
+          "User is prepared for verification and possible exam/credentialing steps"
+        ],
+        "circumstances_that_block_or_slow": [
+          "Unclear qualification equivalence",
+          "Missing transcripts, licenses, or experience letters",
+          "Profession requires additional clinical privileges or facility sponsorship"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Licensed clinical practice",
+          "from_user_signal": "Has healthcare degree, license, and patient-care experience",
+          "how_it_transfers": "Can be assessed against DoH professional qualification and licensing requirements"
+        },
+        {
+          "capability": "Specialist healthcare expertise",
+          "from_user_signal": "Has specialist, advanced practice, or clinical research background",
+          "how_it_transfers": "May align with Abu Dhabi healthcare roles or specialist pathways if licensure and employer demand are verified"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether the user's healthcare qualifications can move through DoH professional licensing and employment readiness checks.",
+        "sector": "Healthcare",
+        "relevant_entities": [
+          "Department of Health - Abu Dhabi",
+          "TAMM",
+          "DataFlow"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Healthcare relocation depends on licensure, not only job interest; the Opportunity Graph can surface credential gaps before the user makes risky relocation assumptions.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-doh-pqr",
+          "claim": "The DoH Professional Qualification Requirement is used to assess education, experience, and licensure requirements for healthcare professionals to practice safely in the UAE.",
+          "source_name": "Department of Health Abu Dhabi PQR",
+          "source_url": "https://www.doh.gov.ae/en/pqr",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official DoH source supports qualification and licensing assessment."
+        },
+        {
+          "evidence_id": "ev-doh-eservices-health-license",
+          "claim": "DoH lists services for registering and managing healthcare professional licenses through Abu Dhabi government services.",
+          "source_name": "Department of Health Abu Dhabi eServices",
+          "source_url": "https://www.doh.gov.ae/en/eservices/",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official DoH source supports the existence of healthcare professional licensing services."
+        }
+      ],
+      "missing_evidence": [
+        "User's exact profession category and PQR match",
+        "DataFlow verification outcome",
+        "Employer sponsorship or facility linkage where required"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "What is your exact healthcare profession and specialty?",
+        "Where are you currently licensed, and is your license active?",
+        "Do you have degree certificates, transcripts, experience letters, and good-standing documents?"
+      ],
+      "what_would_change_assessment": [
+        "A clear PQR category match would reduce uncertainty.",
+        "Missing credential documents would slow or block action.",
+        "An Abu Dhabi employer offer could change the practical route."
+      ],
+      "next_responsible_action": "Map the user's profession to the DoH PQR category and create a credential checklist before job or relocation commitments.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about healthcare career relocation.",
+        "other_possibility_when": "User asks about family/new life and has healthcare credentials that could become an employment path."
+      },
+      "guardrails": [
+        "Do not say a user can practice healthcare without DoH licensing.",
+        "Do not infer credential equivalence."
+      ]
+    },
+    {
+      "opportunity_id": "opp-life-sciences-startup-healthx-hub71",
+      "title": "Life sciences startup or health innovation pathway",
+      "pathways": [
+        "Business",
+        "Career Change",
+        "Investment"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Biotech, MedTech, digital health, clinical research, or health data founder",
+          "Has research, prototype, clinical validation, or healthcare innovation experience",
+          "Needs access to regulators, hospitals, investors, or clinical deployment partners"
+        ],
+        "circumstances_that_help": [
+          "Clear clinical problem and evidence plan",
+          "Ethics, privacy, regulatory, and safety considerations are understood",
+          "Team includes clinical and technical expertise"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No clinical validation plan",
+          "Claims patient benefit without evidence",
+          "Regulatory pathway unclear"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Clinical or biomedical evidence building",
+          "from_user_signal": "Has worked in research, clinical trials, medical devices, diagnostics, or health data",
+          "how_it_transfers": "Can support an Abu Dhabi life-sciences innovation pathway if safety and regulatory gaps are addressed"
+        },
+        {
+          "capability": "Health technology commercialization",
+          "from_user_signal": "Can translate research into product, pilot, or deployment plans",
+          "how_it_transfers": "Matches ecosystem routes that connect policy, capital, research, and clinical deployment"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore Hub71+ Life Sciences, HealthX, DoH innovation routes, or related Abu Dhabi health innovation pathways for suitable health startups.",
+        "sector": "Life Sciences / Digital Health / MedTech",
+        "relevant_entities": [
+          "Hub71+ Life Sciences",
+          "Department of Health - Abu Dhabi",
+          "HealthX",
+          "startAD"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Abu Dhabi has official health innovation initiatives, but health claims require higher evidence responsibility; MAI can separate promising capability from unsafe assumptions.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-hub71-life-sciences",
+          "claim": "Hub71 announced Hub71+ Life Sciences to support BioTech, MedTech, and digital health founders with access to regulators, hospitals, investors, and industry partners.",
+          "source_name": "Hub71 Life Sciences announcement",
+          "source_url": "https://www.hub71.com/latest-news/press-release/abu-dhabi-launches-hub71-plus-life-sciences-to-accelerate-innovation-in-biotech-medtech-and-digital-health",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official Hub71 source supports the existence and purpose of the life sciences specialist ecosystem."
+        },
+        {
+          "evidence_id": "ev-doh-healthx",
+          "claim": "DoH and startAD launched HealthX to advance global life sciences startups into the UAE healthcare ecosystem.",
+          "source_name": "Department of Health Abu Dhabi HealthX announcement",
+          "source_url": "https://www.doh.gov.ae/en/news/startad-and-doh-launch-healthx-to-advance-abu-dhabi-as-global-biotech-and-life-sciences-hub",
+          "date_checked": "2026-10-02",
+          "evidence_status": "needs_update",
+          "evidence_summary": "Official DoH source is useful but programme timing should be rechecked before action."
+        }
+      ],
+      "missing_evidence": [
+        "Current status of HealthX or equivalent intake",
+        "Regulatory route for the user's exact health technology",
+        "Clinical validation, ethics, privacy, and deployment requirements"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "Is the product clinical, wellness, administrative, research, or medical device/software-as-medical-device?",
+        "What evidence do you have for safety, efficacy, and user benefit?",
+        "Do you need access to hospitals, datasets, clinicians, or regulators?"
+      ],
+      "what_would_change_assessment": [
+        "Clinical evidence and regulatory classification would materially change fit.",
+        "A non-clinical workflow product may have a different route than a medical device.",
+        "Current programme availability would determine whether this is immediate or future exploration."
+      ],
+      "next_responsible_action": "Classify the health product's regulatory and evidence category before approaching Hub71, DoH, or clinical partners.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about health startup or medical innovation in Abu Dhabi.",
+        "other_possibility_when": "User asks about healthcare employment but has research/product capability."
+      },
+      "guardrails": [
+        "Do not make medical efficacy claims.",
+        "Do not advise deployment before regulatory and clinical evidence checks."
+      ]
+    },
+    {
+      "opportunity_id": "opp-ai-graduate-study-mbzuai",
+      "title": "AI graduate study and research pathway at MBZUAI",
+      "pathways": [
+        "Education",
+        "Career Change",
+        "Career"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Wants to study or transition into AI",
+          "Has technical, mathematical, software, data, research, or domain background",
+          "Interested in Abu Dhabi as an education and career platform"
+        ],
+        "circumstances_that_help": [
+          "Strong academic record or technical portfolio",
+          "Clear AI research or applied AI interest",
+          "Can meet admission and visa requirements"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No academic readiness for selected programme",
+          "Needs immediate full-time income",
+          "Cannot verify admissions timeline or funding"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Technical learning capacity",
+          "from_user_signal": "Has STEM, software, data, engineering, math, or analytical background",
+          "how_it_transfers": "Can support graduate AI study as a relocation pathway rather than direct employment"
+        },
+        {
+          "capability": "Domain-to-AI translation",
+          "from_user_signal": "Has domain expertise in health, finance, climate, education, logistics, or public services",
+          "how_it_transfers": "Can become an applied AI research or professional master's direction"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore MBZUAI graduate or professional AI programmes as an education-led relocation and career-change pathway.",
+        "sector": "Higher Education / AI Research",
+        "relevant_entities": [
+          "MBZUAI"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "For users not ready for a job or startup, Abu Dhabi's AI education infrastructure may create a responsible pathway to build capability before choosing a future.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-mbzuai-programs",
+          "claim": "MBZUAI offers AI-related programmes including applied AI professional training and M.Sc./Ph.D. tracks in areas such as machine learning, NLP, computer vision, computer science, robotics, and HCI.",
+          "source_name": "MBZUAI programmes",
+          "source_url": "https://mbzuai.ac.ae/research/divisions/computing-mathematical-sciences-division/programs",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official university source supports available programme categories and AI focus."
+        }
+      ],
+      "missing_evidence": [
+        "Current admissions deadlines, fees, funding, and visa details",
+        "User's academic eligibility for the specific programme",
+        "Whether the programme format supports working professionals or full-time students"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What is your highest degree and field?",
+        "Are you looking for full-time study, part-time professional study, or research?",
+        "What AI area do you want to build toward?"
+      ],
+      "what_would_change_assessment": [
+        "A matching academic record and current deadline would increase actionability.",
+        "Need for immediate income would shift toward employment or part-time options.",
+        "A weak technical foundation would suggest preparatory learning first."
+      ],
+      "next_responsible_action": "Choose the target AI programme type and verify current admissions, eligibility, funding, and visa requirements on MBZUAI's official site.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about studying AI or changing career through education.",
+        "other_possibility_when": "User asks for AI jobs but lacks recent AI credentials and may benefit from education first."
+      },
+      "guardrails": [
+        "Do not imply admission or funding.",
+        "Do not select a programme without academic eligibility details."
+      ]
+    },
+    {
+      "opportunity_id": "opp-research-graduate-nyuad-ku",
+      "title": "Graduate research pathway through NYU Abu Dhabi or Khalifa University",
+      "pathways": [
+        "Education",
+        "Career",
+        "Career Change"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Research-oriented student or professional",
+          "Interested in engineering, science, data, health systems, transportation, or interdisciplinary graduate study",
+          "Wants Abu Dhabi as an academic and research base"
+        ],
+        "circumstances_that_help": [
+          "Strong academic record and research statement",
+          "Field aligns with available graduate programmes",
+          "Can plan around admissions cycles"
+        ],
+        "circumstances_that_block_or_slow": [
+          "Field not offered by target institution",
+          "No research fit or academic references",
+          "Needs immediate relocation timeline"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Research readiness",
+          "from_user_signal": "Has thesis, publications, lab/project experience, or strong academic preparation",
+          "how_it_transfers": "Can become a graduate research pathway rather than only job-market entry"
+        },
+        {
+          "capability": "Interdisciplinary problem solving",
+          "from_user_signal": "Combines engineering, science, data, design, policy, or business interests",
+          "how_it_transfers": "Can align with Abu Dhabi graduate programmes spanning engineering, science, data, and management"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore graduate research options at NYU Abu Dhabi and Khalifa University as education-led relocation pathways.",
+        "sector": "Higher Education / Research",
+        "relevant_entities": [
+          "NYU Abu Dhabi",
+          "Khalifa University"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Some users can build their Abu Dhabi future through research and graduate education, especially where direct employment or business setup would be premature.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-nyuad-graduate-programs",
+          "claim": "NYU Abu Dhabi lists graduate programmes including PhD programmes and master's programmes such as Data Science and AI, MBA, EMBA, and MFA.",
+          "source_name": "NYU Abu Dhabi Graduate Admissions",
+          "source_url": "https://nyuad.nyu.edu/en/apply/graduate.html",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official NYUAD page supports programme availability at a high level."
+        },
+        {
+          "evidence_id": "ev-khalifa-graduate-programs",
+          "claim": "Khalifa University offers graduate programmes across engineering, medicine, security, science, and technology.",
+          "source_name": "Khalifa University Graduate Programs",
+          "source_url": "https://www.ku.ac.ae/academics/graduate-programs",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official Khalifa University page supports broad graduate programme availability."
+        }
+      ],
+      "missing_evidence": [
+        "Exact programme fit for user's field",
+        "Current deadlines, funding, assistantships, and admission requirements",
+        "Visa, housing, family, and work-permission implications for the user"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What field and degree level are you targeting?",
+        "Do you have research experience, publications, or a thesis topic?",
+        "Is your relocation timeline tied to a specific semester or family move?"
+      ],
+      "what_would_change_assessment": [
+        "A named programme and supervisor fit would strengthen assessment.",
+        "Missed admissions deadlines would defer the pathway.",
+        "Funding status would materially change feasibility."
+      ],
+      "next_responsible_action": "Shortlist exact programmes and verify current admissions, funding, and faculty fit before treating education as a relocation route.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about education, research, or graduate study in Abu Dhabi.",
+        "other_possibility_when": "User asks about career change and has research/academic strengths."
+      },
+      "guardrails": [
+        "Do not infer admission competitiveness.",
+        "Do not claim funding unless verified for a specific programme."
+      ]
+    },
+    {
+      "opportunity_id": "opp-family-school-planning-adek",
+      "title": "Family relocation planning through ADEK school evidence",
+      "pathways": [
+        "Family",
+        "New Life",
+        "Education"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Moving with children",
+          "Needs school quality, fees, curriculum, inclusion, or timing clarity",
+          "Family decision depends on education confidence"
+        ],
+        "circumstances_that_help": [
+          "Children's ages, curriculum needs, and school year timing are known",
+          "Budget and neighborhood preferences are known",
+          "Special education or language needs are disclosed"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No information about child's age or curriculum",
+          "Tight relocation date with no school availability check",
+          "Needs of determination or support needs not yet evaluated"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Family planning discipline",
+          "from_user_signal": "User is coordinating education, housing, work, and timing for dependents",
+          "how_it_transfers": "Can become a structured school-search and relocation risk checklist"
+        },
+        {
+          "capability": "Education fit evaluation",
+          "from_user_signal": "User can specify curriculum, languages, support needs, and budget",
+          "how_it_transfers": "Can map to ADEK-regulated school data and transparent school performance indicators"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Use ADEK school oversight, ratings, and policy evidence to structure a responsible family relocation plan.",
+        "sector": "Family / Schooling",
+        "relevant_entities": [
+          "ADEK",
+          "Abu Dhabi private schools"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "For families, relocation feasibility may depend more on school fit than on abstract lifestyle claims; ADEK evidence can make the decision process visible and practical.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-adek-private-schools",
+          "claim": "ADEK regulates Abu Dhabi private schools, monitors student progress, evaluates school efficiency, and provides policies designed for an inclusive and supportive educational landscape.",
+          "source_name": "ADEK Private Schools",
+          "source_url": "https://adek.gov.ae/en/Education-System/Private-Schools",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADEK source supports regulatory oversight and parent-facing school planning relevance."
+        },
+        {
+          "evidence_id": "ev-adek-performance-plaques",
+          "claim": "ADEK's School Performance Plaques display Irtiqaa and National Identity Mark ratings to support transparency and parent decision-making.",
+          "source_name": "ADEK School Performance Plaques",
+          "source_url": "https://www.adek.gov.ae/en/Programmes-and-Initiatives/School-Performance-Plaques",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADEK source supports using ratings as evidence in family relocation planning."
+        }
+      ],
+      "missing_evidence": [
+        "School availability for the child's grade and relocation date",
+        "Current fee schedules and admission requirements",
+        "Specific curriculum, language, transport, and support services fit"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "How many children are relocating, and what are their ages/grades?",
+        "Which curriculum do they need or prefer?",
+        "Do any children need additional learning, language, medical, or inclusion support?"
+      ],
+      "what_would_change_assessment": [
+        "Confirmed seats at suitable schools would reduce relocation risk.",
+        "Special support requirements without school confirmation would increase risk.",
+        "Budget constraints may change neighborhood and school options."
+      ],
+      "next_responsible_action": "Create a school-fit checklist and verify seats, fees, curriculum, ratings, and support services before finalizing housing or move date.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about moving family or children's education.",
+        "other_possibility_when": "User asks about job relocation and mentions spouse/children only briefly."
+      },
+      "guardrails": [
+        "Do not recommend a school without current availability and family needs.",
+        "Do not treat general school quality ratings as fit for a specific child."
+      ]
+    },
+    {
+      "opportunity_id": "opp-remote-worker-new-life-adro",
+      "title": "Remote worker new-life pathway in Abu Dhabi",
+      "pathways": [
+        "New Life",
+        "Career",
+        "Family"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Works remotely for an employer or clients outside the UAE",
+          "Wants Abu Dhabi lifestyle without immediately changing employer",
+          "Can document income and remote employment"
+        ],
+        "circumstances_that_help": [
+          "Remote contract/employment is stable",
+          "Income documentation is available",
+          "Family, schooling, housing, tax, and healthcare questions are considered separately"
+        ],
+        "circumstances_that_block_or_slow": [
+          "Income below official threshold",
+          "Works for a UAE entity rather than outside-UAE entity",
+          "Cannot document employment or bank statements"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Location-independent earning",
+          "from_user_signal": "Has remote job, contract, or international clients",
+          "how_it_transfers": "Can support a non-employer-led relocation pathway if visa and documentation requirements are met"
+        },
+        {
+          "capability": "Self-managed relocation planning",
+          "from_user_signal": "Can coordinate housing, schooling, healthcare, and work timezone constraints",
+          "how_it_transfers": "Can become a new-life plan that does not depend first on Abu Dhabi employment"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore the Remote Work Visa route and practical new-life planning for users who keep foreign employment while living in Abu Dhabi.",
+        "sector": "Remote Work / Residency",
+        "relevant_entities": [
+          "Abu Dhabi Residents Office"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Some users can relocate without first finding a local job or founding a company, but only if the remote-work evidence and application route are currently viable.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-adro-remote-work-visa",
+          "claim": "ADRO's Remote Work Visa page states eligibility includes working remotely for an entity outside the UAE and earning monthly income of no less than USD 3,500 or equivalent, while noting nomination request submission is currently unavailable through ADRO.",
+          "source_name": "Abu Dhabi Residents Office Remote Work Visa",
+          "source_url": "https://www.adro.gov.ae/en/Visas/Types-of-Visas/Abu-Dhabi-Non-Working-Visa/Remote-Work-Visa",
+          "date_checked": "2026-10-02",
+          "evidence_status": "partial",
+          "evidence_summary": "Official source supports criteria but also flags current ADRO submission limitation, so actionability must be verified."
+        }
+      ],
+      "missing_evidence": [
+        "Current application route if ADRO nomination is unavailable",
+        "Family sponsorship and dependent implications",
+        "Tax, employer compliance, health insurance, and housing requirements"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "Who is your employer or client base, and are they outside the UAE?",
+        "Can you document monthly income and bank statements?",
+        "Are you relocating alone or with dependents?"
+      ],
+      "what_would_change_assessment": [
+        "A currently available application route would make this more actionable.",
+        "Income below the threshold would block this specific route.",
+        "Dependents would require additional verification."
+      ],
+      "next_responsible_action": "Verify the current remote-work visa application channel and document requirements before making housing, school, or travel commitments.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about moving to Abu Dhabi while keeping a remote job.",
+        "other_possibility_when": "User asks about career relocation but already has stable remote income."
+      },
+      "guardrails": [
+        "Do not state that application is available through ADRO when the source says it is currently unavailable there.",
+        "Do not give tax or immigration advice."
+      ]
+    },
+    {
+      "opportunity_id": "opp-golden-visa-specialist-researcher",
+      "title": "Specialist or researcher long-term residency evidence check",
+      "pathways": [
+        "Career",
+        "New Life",
+        "Education"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Researcher, scientist, engineer, technologist, healthcare/education specialist, executive, or highly skilled professional",
+          "Has advanced degree, publication metrics, UAE employment, professional license, or recognized expertise",
+          "Wants long-term residency stability"
+        ],
+        "circumstances_that_help": [
+          "Can document degree equivalency, citation metrics, professional classification, salary, license, or recommendation",
+          "Has UAE employment or relevant local authority recommendation where required",
+          "Understands category-specific criteria"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No category match",
+          "Missing equivalency, recommendation, salary, license, or UAE employment evidence",
+          "Application channel unavailable for a subcategory"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Recognized specialist expertise",
+          "from_user_signal": "Advanced degree, publications, professional license, executive role, or specialized occupation",
+          "how_it_transfers": "Can be checked against Abu Dhabi Golden Visa specialist categories rather than treated as generic career strength"
+        },
+        {
+          "capability": "Evidence documentation",
+          "from_user_signal": "Can provide official degrees, salary certificates, contracts, licenses, publications, or recommendations",
+          "how_it_transfers": "Converts personal achievement into verifiable residency eligibility evidence"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Assess whether the user may fit a specialist, researcher, skilled professional, healthcare, education, or industry/4IR Golden Visa evidence pathway.",
+        "sector": "Long-Term Residency / Talent",
+        "relevant_entities": [
+          "Abu Dhabi Residents Office",
+          "ICP",
+          "TAMM",
+          "Relevant local/federal recommending authorities"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Long-term residency can change the user's planning horizon, but only if category-specific evidence exists; this is exactly where MAI should ask for documents instead of guessing.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-adro-golden-visa-specialists",
+          "claim": "ADRO's Specialists page lists Golden Visa specialist categories and criteria including scientists/researchers, industry and 4IR specialists, healthcare specialists, education specialists, skilled employees, and related evidence requirements.",
+          "source_name": "Abu Dhabi Residents Office Golden Visa for Specialists",
+          "source_url": "https://www.adro.gov.ae/Visas/Types-of-Visas/Abu-Dhabi-Golden-Visa/Specialists",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADRO source supports specialist category evidence checks."
+        },
+        {
+          "evidence_id": "ev-icp-golden-residency",
+          "claim": "ICP describes Golden Residency as intended to attract investors, entrepreneurs, and exceptional talent to support economic growth and strengthen the UAE skills base.",
+          "source_name": "Federal Authority for Identity, Citizenship, Customs & Port Security",
+          "source_url": "https://icp.gov.ae/en/services/uae-golden-residency/",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official federal source supports the broader national Golden Residency context."
+        }
+      ],
+      "missing_evidence": [
+        "Exact Golden Visa category and subcategory match",
+        "Current application availability and channel for the chosen category",
+        "User-specific documents: degree equivalency, salary, license, recommendation, metrics, contract, or UAE employment"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "Which evidence do you have: UAE employment contract, salary certificate, degree equivalency, professional license, publications/citations, or authority recommendation?",
+        "Are you applying from inside or outside the UAE?",
+        "Which specialist category do you believe fits you?"
+      ],
+      "what_would_change_assessment": [
+        "Confirmed category match and documents would increase readiness.",
+        "No UAE employment or required recommendation would block some categories.",
+        "A suspended or unavailable application channel would change next action."
+      ],
+      "next_responsible_action": "Run a category-by-category evidence checklist and verify the current application channel before presenting Golden Visa as a viable pathway.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about long-term residency, Golden Visa, specialist visa, or stability.",
+        "other_possibility_when": "User asks about work or education and reveals strong evidence that may support long-term residency."
+      },
+      "guardrails": [
+        "Do not claim eligibility without category-specific document evidence.",
+        "Do not provide immigration advice beyond evidence checklist and official-source routing."
+      ]
+    },
+    {
+      "opportunity_id": "opp-real-estate-investor-residency-check",
+      "title": "Real estate investor residency evidence check",
+      "pathways": [
+        "Investment",
+        "New Life",
+        "Family"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Has capital for property investment",
+          "Wants long-term Abu Dhabi base for self or family",
+          "Needs residency implications checked alongside investment goals"
+        ],
+        "circumstances_that_help": [
+          "Investment budget and financing structure are clear",
+          "User understands property is an investment decision, not only a visa route",
+          "Can verify ownership, mortgage, and registration documentation"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No confirmed budget or financing",
+          "Assumes residency without meeting property/document rules",
+          "No independent legal, tax, and property due diligence"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Capital allocation",
+          "from_user_signal": "Has savings, investment capital, or property-buying intent",
+          "how_it_transfers": "Can be evaluated against Abu Dhabi property-residency evidence requirements and investment-area rules"
+        },
+        {
+          "capability": "Family stability planning",
+          "from_user_signal": "Wants a stable base, schools, housing, and long-term planning",
+          "how_it_transfers": "Can connect investment decision, residency possibility, and family logistics into one evidence chain"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether Abu Dhabi property ownership may support a Golden Visa or other property-linked residency route, subject to current rules and due diligence.",
+        "sector": "Real Estate / Investment / Residency",
+        "relevant_entities": [
+          "Abu Dhabi Residents Office",
+          "Department of Municipalities and Transport",
+          "ICP"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Property can be both a life-base and investment decision; MAI should expose the evidence and risks rather than treat property purchase as a simple residency shortcut.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-adro-investor-golden-visa",
+          "claim": "ADRO describes real estate investor Golden Visa evidence requirements, including registered purchase or valuation evidence and a property value threshold referenced on the official page.",
+          "source_name": "Abu Dhabi Residents Office Golden Visa for Investors",
+          "source_url": "https://www.adro.gov.ae/Visas/Types-of-Visas/Abu-Dhabi-Golden-Visa/Investors",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official ADRO source supports property-linked Golden Visa evidence checks."
+        },
+        {
+          "evidence_id": "ev-adro-where-to-live-freehold",
+          "claim": "ADRO notes Abu Dhabi has investment areas where foreign individuals and certain companies can own freehold interests, and connects property over AED 2 million with Golden Visa planning.",
+          "source_name": "Abu Dhabi Residents Office Where To Live",
+          "source_url": "https://www.adro.gov.ae/Living-in-Abu-Dhabi/Where-To-Live",
+          "date_checked": "2026-10-02",
+          "evidence_status": "partial",
+          "evidence_summary": "Official ADRO living guide supports context, but transaction rules require current legal/property verification."
+        }
+      ],
+      "missing_evidence": [
+        "Current property value threshold and mortgage/off-plan treatment at time of application",
+        "Whether the target property is in an eligible ownership/investment area",
+        "Legal, tax, financing, service-charge, and resale-risk due diligence"
+      ],
+      "uncertainty_level": "high",
+      "gap_questions": [
+        "What is your property budget and financing plan?",
+        "Are you buying to live, invest, rent out, or support residency planning?",
+        "Have you identified a specific property or investment area?"
+      ],
+      "what_would_change_assessment": [
+        "Confirmed property eligibility and valuation would reduce uncertainty.",
+        "Mortgage or off-plan structure may change evidence requirements.",
+        "Family schooling and commute needs may change property suitability."
+      ],
+      "next_responsible_action": "Verify property eligibility, ownership area, valuation, financing, and Golden Visa evidence with official channels and qualified advisors before making an offer.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about investment, property, or residency through real estate.",
+        "other_possibility_when": "User asks about family/new life and has significant investment capital."
+      },
+      "guardrails": [
+        "Do not give investment advice.",
+        "Do not claim a property purchase will secure residency without current official verification."
+      ]
+    },
+    {
+      "opportunity_id": "opp-creative-professional-dct-twofour54",
+      "title": "Creative professional pathway through DCT Creative Visa or twofour54",
+      "pathways": [
+        "Career",
+        "Business",
+        "New Life"
+      ],
+      "capability_match": {
+        "best_fit_user_signals": [
+          "Artist, designer, game developer, media professional, writer, performer, filmmaker, publisher, or creative entrepreneur",
+          "Has portfolio, public work, awards, clients, credits, or cultural contribution",
+          "Wants Abu Dhabi creative ecosystem rather than only generic employment"
+        ],
+        "circumstances_that_help": [
+          "Strong portfolio and evidence of creative work",
+          "Business model or freelance activity fits media/creative licensing",
+          "Can document recognition, clients, or contribution"
+        ],
+        "circumstances_that_block_or_slow": [
+          "No portfolio or public evidence",
+          "Creative work does not map to eligible categories",
+          "Visa, license, and income route are mixed up"
+        ]
+      },
+      "transferable_capabilities": [
+        {
+          "capability": "Creative portfolio evidence",
+          "from_user_signal": "Has published work, exhibitions, productions, game projects, design work, media credits, or awards",
+          "how_it_transfers": "Can support creative visa, licensing, freelance, or ecosystem exploration if category fit is verified"
+        },
+        {
+          "capability": "Independent creative business",
+          "from_user_signal": "Can sell creative services or media products independently",
+          "how_it_transfers": "May map to twofour54 freelancer or company setup routes"
+        }
+      ],
+      "abu_dhabi_opportunity": {
+        "description": "Explore whether the user fits Abu Dhabi creative residency, freelance, or media free zone setup routes.",
+        "sector": "Creative Industries / Media / Gaming",
+        "relevant_entities": [
+          "Department of Culture and Tourism - Abu Dhabi",
+          "twofour54",
+          "Creative Media Authority"
+        ]
+      },
+      "why_this_matters_in_abu_dhabi": "Abu Dhabi has visible creative-industry institutions and licensing routes, allowing creative users to see futures beyond standard employment relocation.",
+      "evidence_refs": [
+        {
+          "evidence_id": "ev-dct-creative-visa",
+          "claim": "DCT Abu Dhabi announced a Creative Visa initiative supporting talented individuals in cultural and creative industries including heritage, performing arts, visual arts, design, crafts, gaming, esports, media, and publishing.",
+          "source_name": "Department of Culture and Tourism Abu Dhabi Creative Visa announcement",
+          "source_url": "https://dct.gov.ae/en/media.centre/news/the.department.of.culture.and.tourism.abu.dhabi.launches.creative.visa.initiative.aspx",
+          "date_checked": "2026-10-02",
+          "evidence_status": "partial",
+          "evidence_summary": "Official DCT announcement supports the initiative, but current application requirements need verification."
+        },
+        {
+          "evidence_id": "ev-twofour54-business-setup",
+          "claim": "twofour54 describes business setup and freelancer options in Abu Dhabi's media free zone, including support for media, gaming, production, and content creation businesses.",
+          "source_name": "twofour54 Business Setup",
+          "source_url": "https://www.twofour54.com/en/business-setup/",
+          "date_checked": "2026-10-02",
+          "evidence_status": "verified",
+          "evidence_summary": "Official twofour54 source supports media free zone and freelancer setup exploration."
+        }
+      ],
+      "missing_evidence": [
+        "Current Creative Visa application status and category requirements",
+        "Whether the user's portfolio fits DCT or twofour54 categories",
+        "Income, licensing, office, visa, and client requirements"
+      ],
+      "uncertainty_level": "medium",
+      "gap_questions": [
+        "What creative field are you in, and what portfolio evidence can you show?",
+        "Are you seeking employment, freelance licensing, company setup, or residency recognition?",
+        "Do you have clients, credits, awards, exhibitions, shipped games, published work, or media coverage?"
+      ],
+      "what_would_change_assessment": [
+        "A strong portfolio and category match would strengthen fit.",
+        "Current Creative Visa requirements may change route selection.",
+        "Need for immediate stable income may shift focus to employment or client pipeline first."
+      ],
+      "next_responsible_action": "Build a portfolio evidence checklist and verify whether DCT Creative Visa, twofour54 freelancer, or company setup is the most relevant official route.",
+      "demo_classification_hints": {
+        "your_request_when": "User asks about creative work, media, gaming, arts, or freelancing in Abu Dhabi.",
+        "other_possibility_when": "User asks for a new life and has a strong creative portfolio."
+      },
+      "guardrails": [
+        "Do not imply creative visa approval from talent alone.",
+        "Do not conflate residency recognition with business licensing."
+      ]
+    }
+  ]
+}
